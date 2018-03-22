@@ -1,0 +1,4 @@
+function f=dy(x,y)
+f(1)=y(2);
+f(2)=-y(1);
+f=f(:);
