@@ -1,0 +1,12 @@
+clear,clc;
+xa=0;
+xb=5;
+y0=[1 0];
+h=0.002;
+[x,y]=Euler(@dy,xa,xb,y0,h);
+
+plot(x,y(1,:),'.','MarkerSize',20);
+hold on ;
+plot(x,y(2,:),'.','MarkerSize',20);
+title('Euler');
+legend('y(1)','y(2)');
