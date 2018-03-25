@@ -1,0 +1,7 @@
+[y1,y2]=dsolve('Dy1=y2,Dy2=-y1','y1(0)=1','y2(0)=0')
+figure;title('解析解');
+subplot(1,2,1);
+ezplot(y1,[0,5]);
+hold on
+subplot(1,2,2)
+ezplot(y2,[0,5])
